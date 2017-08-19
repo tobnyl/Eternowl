@@ -3196,12 +3196,12 @@ Prefab:
     - target: {fileID: 61571508143443448, guid: c7e0a141f31e762488827ee2a9172b38,
         type: 2}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 2.56
+      value: 5.12
       objectReference: {fileID: 0}
     - target: {fileID: 61571508143443448, guid: c7e0a141f31e762488827ee2a9172b38,
         type: 2}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 2.56
+      value: 5.12
       objectReference: {fileID: 0}
     - target: {fileID: 61571508143443448, guid: c7e0a141f31e762488827ee2a9172b38,
         type: 2}
