@@ -2031,6 +2031,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7e0a141f31e762488827ee2a9172b38, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1188138114 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1099384578462070, guid: c7e0a141f31e762488827ee2a9172b38,
+    type: 2}
+  m_PrefabInternal: {fileID: 1188138113}
 --- !u!1001 &1194838986
 Prefab:
   m_ObjectHideFlags: 0
@@ -2920,6 +2925,11 @@ Prefab:
       propertyPath: timeScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114935334693032570, guid: 50056daaa470094478972a266066b4d3,
+        type: 2}
+      propertyPath: PortalTop
+      value: 
+      objectReference: {fileID: 1188138114}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 50056daaa470094478972a266066b4d3, type: 2}
   m_IsPrefabParent: 0

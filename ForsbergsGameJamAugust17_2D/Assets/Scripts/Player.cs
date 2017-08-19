@@ -15,6 +15,7 @@ public class Player : MonoBehaviour {
     public float Offset;
     
     public GameObject Level;
+    public GameObject PortalTop;
 
     private Rigidbody _rigidBody;
 
@@ -28,7 +29,7 @@ public class Player : MonoBehaviour {
 
     void Start()
     {
-
+        transform.position = PortalTop.transform.position;
     }
 
     void Update()
@@ -58,6 +59,7 @@ public class Player : MonoBehaviour {
         else if (other.gameObject.tag == "PortalBottom")
         {
             Debug.Log("Portal!");
+            transform.position = PortalTop.transform.position;
         }
     }
 
