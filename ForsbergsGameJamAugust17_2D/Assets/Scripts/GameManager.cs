@@ -31,4 +31,9 @@ public class GameManager : MonoBehaviour
     {
         //Debug.LogFormat("Keys: {0}", Keys);
     }
+
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene(Levels[CurrentLevelIndex]);
+    }
 }

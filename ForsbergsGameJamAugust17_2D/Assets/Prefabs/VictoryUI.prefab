@@ -19,8 +19,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4567146772332300}
+  - component: {fileID: 114727977861758298}
   m_Layer: 0
-  m_Name: UI
+  m_Name: VictoryUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -221,6 +222,18 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114727977861758298
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1001670294561510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8a2341ac21de594293f9803be5088db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneNameToLoad: Level01
 --- !u!114 &114839012927241316
 MonoBehaviour:
   m_ObjectHideFlags: 1

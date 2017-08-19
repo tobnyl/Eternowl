@@ -79,6 +79,7 @@ public class Player : MonoBehaviour {
         else if (other.gameObject.tag == "Goal" && _hasKey)
         {
             Debug.Log("Goal!");
+            GoalSequence();
         }
         else if (other.gameObject.tag == "Spike")
         {
@@ -103,6 +104,8 @@ public class Player : MonoBehaviour {
         _rigidBody.isKinematic = true;
 
         GameManager.Instance.CurrentLevelIndex++;
+
+        StartCoroutine(GoalCoroutine());
     }
 
     #endregion
