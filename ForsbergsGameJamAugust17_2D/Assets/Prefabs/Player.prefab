@@ -98,6 +98,9 @@ MonoBehaviour:
   LeftEdge: {fileID: 0}
   RightEdge: {fileID: 0}
   Offset: 0.05
+  DeathSequenceTime: 1
+  Camera: {fileID: 0}
+  SpawnPosition: {fileID: 0}
 --- !u!212 &212363153126494674
 SpriteRenderer:
   m_ObjectHideFlags: 1

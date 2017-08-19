@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
 
@@ -13,12 +14,16 @@ public class Player : MonoBehaviour {
     public Transform LeftEdge;
     public Transform RightEdge;
     public float Offset;
+
+    [Header("Death")]
+    public float DeathSequenceTime;
     
     public CameraMovement Camera;
     public GameObject SpawnPosition;
 
     private Rigidbody _rigidBody;
     private bool _hasKey;
+    private SpriteRenderer _spriteRenderer;
 
     public bool IsDead { get; set; }
 
@@ -28,6 +33,7 @@ public class Player : MonoBehaviour {
     void Awake()
     {
         _rigidBody = GetComponent<Rigidbody>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Start()
@@ -75,15 +81,34 @@ public class Player : MonoBehaviour {
         }
         else if (other.gameObject.tag == "Spike")
         {
-            IsDead = true;
-            Destroy(gameObject);
+            DeathSequence();
         }
     }
 
     #endregion
     #region Methods
 
+    private void DeathSequence()
+    {
+        IsDead = true;
+        //_spriteRenderer.enabled = false;
+        _rigidBody.isKinematic = true;
 
+        StartCoroutine(DeathCoroutine());
+    }
+
+    #endregion
+
+    #region Coroutines
+
+    private IEnumerator DeathCoroutine()
+    {
+        yield return new WaitForSeconds(DeathSequenceTime);
+
+        Debug.Log("Death...");
+
+        SceneManager.LoadScene("GameOver");
+    }
 
     #endregion
 }

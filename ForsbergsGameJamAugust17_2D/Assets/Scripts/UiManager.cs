@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class UiManager : MonoBehaviour 
 {
@@ -33,7 +34,8 @@ public class UiManager : MonoBehaviour
 	{
 		if (Input.GetButtonDown("Next"))
         {
-
+            Debug.Log("Continue!!");
+            SceneManager.LoadScene(SceneNameToLoad);
         }
 	}
 	
