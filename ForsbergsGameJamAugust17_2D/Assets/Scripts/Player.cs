@@ -15,7 +15,7 @@ public class Player : MonoBehaviour {
     public float Offset;
     
     public CameraMovement Camera;
-    public GameObject PortalTop;
+    public GameObject SpawnPosition;
 
     private Rigidbody _rigidBody;
 
@@ -29,7 +29,7 @@ public class Player : MonoBehaviour {
 
     void Start()
     {
-        transform.position = PortalTop.transform.position;
+        transform.position = SpawnPosition.transform.position;
     }
 
     void Update()
@@ -59,7 +59,7 @@ public class Player : MonoBehaviour {
         else if (other.gameObject.tag == "PortalBottom")
         {
             Debug.Log("Portal!");
-            transform.position = PortalTop.transform.position;
+            transform.position = SpawnPosition.transform.position;
             Camera.ResetPosition();
         }
     }
