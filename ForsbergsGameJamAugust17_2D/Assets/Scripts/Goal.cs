@@ -5,6 +5,10 @@ public class Goal : MonoBehaviour
 {
     #region Fields/Properties
 
+    public Sprite OpenDoor;
+
+    private SpriteRenderer _spriteRenderer;
+
     public bool IsUnlocked { get; set; }
 
     #endregion
@@ -12,7 +16,7 @@ public class Goal : MonoBehaviour
 
     void Awake()
 	{
-		
+        _spriteRenderer = GetComponent<SpriteRenderer>();
 	}
 	
 	void Start() 
@@ -28,7 +32,10 @@ public class Goal : MonoBehaviour
 	#endregion
 	#region Methods
 	
-	
+	public void ChangeToOpenDoorSprite()
+    {
+        _spriteRenderer.sprite = OpenDoor;
+    }
 	
 	#endregion
 }

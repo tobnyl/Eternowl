@@ -52,8 +52,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.56, y: 2.56, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.23, y: 4.43, z: 0.2}
+  m_Center: {x: 0.12, y: 0, z: 0}
 --- !u!114 &114109093089927352
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -65,6 +65,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f8eb980d9181374abbe9f5b9eda9e06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OpenDoor: {fileID: 21300000, guid: d591538a3749d1849b8fac6dd975a075, type: 3}
 --- !u!212 &212959305719439226
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -97,7 +98,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 7893b612042f67b4b8f9fa5c2d353061, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 49f8b644c4b49574a983b6c314d35379, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

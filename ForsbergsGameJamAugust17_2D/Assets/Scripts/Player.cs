@@ -21,6 +21,7 @@ public class Player : MonoBehaviour {
     public float GoalSequenceTime;
     public float FinishedSequenceTime;
 
+    public Goal GoalDoor;
     public CameraMovement Camera;
     public GameObject SpawnPosition;
 
@@ -76,6 +77,7 @@ public class Player : MonoBehaviour {
         else if (other.gameObject.tag == "Key")
         {            
             _hasKey = true;
+            GoalDoor.ChangeToOpenDoorSprite();
             Destroy(other.gameObject);
         }
         else if (other.gameObject.tag == "Goal" && _hasKey)
