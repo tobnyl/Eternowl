@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public string[] Levels;    
 
     public int CurrentLevelIndex { get; set; }
+    public bool FinishedGame { get { return CurrentLevelIndex >= Levels.Length;  } }
 
     private static GameManager _instance;
     public static GameManager Instance
@@ -34,7 +35,10 @@ public class GameManager : MonoBehaviour
 
     public void LoadNextScene()
     {
-        SceneManager.LoadScene(Levels[CurrentLevelIndex]);
+        if (CurrentLevelIndex < Levels.Length)
+        {
+            SceneManager.LoadScene(Levels[CurrentLevelIndex]);
+        }
     }
 
     public void LoadCurrentScene()

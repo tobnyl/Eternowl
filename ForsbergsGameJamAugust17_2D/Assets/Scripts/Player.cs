@@ -111,7 +111,14 @@ public class Player : MonoBehaviour {
 
         GameManager.Instance.CurrentLevelIndex++;
 
-        StartCoroutine(GoalCoroutine());
+        if (!GameManager.Instance.FinishedGame)
+        {
+            StartCoroutine(GoalCoroutine());
+        }
+        else
+        {
+            Debug.Log("Finished game!");
+        }
     }
 
     #endregion
