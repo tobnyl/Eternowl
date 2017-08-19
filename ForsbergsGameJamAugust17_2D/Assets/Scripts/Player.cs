@@ -13,6 +13,8 @@ public class Player : MonoBehaviour {
     public Transform LeftEdge;
     public Transform RightEdge;
     public float Offset;
+    
+    public GameObject Level;
 
     private Rigidbody _rigidBody;
 
@@ -52,6 +54,10 @@ public class Player : MonoBehaviour {
             var boxCollider = other.gameObject.GetComponent<BoxCollider>();
 
             transform.position = new Vector3(RightEdge.position.x - boxCollider.size.x - Offset, transform.position.y, RightEdge.position.z);
+        }
+        else if (other.gameObject.tag == "PortalBottom")
+        {
+            Debug.Log("Portal!");
         }
     }
 

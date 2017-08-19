@@ -53,9 +53,7 @@ public class CameraMovement : MonoBehaviour
             var temp = transform.position;
             temp.y = _bounds.min.y + _height / 2f;
             transform.position = temp;
-        }
-
-        //Debug.LogFormat("Camera: {0} | Bottom: {1}", transform.position.y - (_height / 2f), _bounds.min.y);
+        }        
     }
 	
 	#endregion
