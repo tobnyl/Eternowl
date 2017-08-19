@@ -11,8 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level01.unity
     guid: 142b27df78463bb4999c83957bb370be
-  - enabled: 1
-    path: Assets/Scenes/Level02.unity
+  - enabled: 0
+    path: Assets/__DELETED_GUID_Trash/01f6291aaf756f24283b4fee631255ef
     guid: 01f6291aaf756f24283b4fee631255ef
   - enabled: 1
     path: Assets/Scenes/Victory.unity
@@ -20,3 +20,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FinishedGame.unity
     guid: 4f080bbff5e9ca847bb7bdee6f5d6ee7
+  - enabled: 1
+    path: Assets/Scenes/Level02.unity
+    guid: a0baf9108cdf2a24daecbc6ba998ead7
+  - enabled: 1
+    path: Assets/Scenes/Level03.unity
+    guid: e3c20fd098eb0c2479ae22c7c29ecadd
+  - enabled: 1
+    path: Assets/Scenes/Level04.unity
+    guid: 60a39dbc08d533545876e1aa000d611d
+  - enabled: 1
+    path: Assets/Scenes/Level05.unity
+    guid: 9c7fbbc0afbabbc448e7442747fa79e5
+  - enabled: 1
+    path: Assets/Scenes/Level06.unity
+    guid: 45db9948e3beda54480c0c75557b0b90
+  - enabled: 1
+    path: Assets/Scenes/Level07.unity
+    guid: f3b209a0a1070854b8dcbc0e4f9ba0aa
