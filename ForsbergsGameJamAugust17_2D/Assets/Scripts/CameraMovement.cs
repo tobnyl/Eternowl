@@ -41,18 +41,22 @@ public class CameraMovement : MonoBehaviour
 	{
         _cameraBottom = transform.position.y - (_height / 2f);
         _isAtBottom = _cameraBottom <= _bounds.min.y;
-
-        //Debug.Log(isAtBottom);
-
+        
         if (!_isAtBottom && Player.transform.position.y < transform.position.y)
         {
             var temp = transform.position;
             temp.y = Player.transform.position.y;
             transform.position = temp;
         }
+        else if (_isAtBottom)
+        {
+            var temp = transform.position;
+            temp.y = _bounds.min.y + _height / 2f;
+            transform.position = temp;
+        }
 
         //Debug.LogFormat("Camera: {0} | Bottom: {1}", transform.position.y - (_height / 2f), _bounds.min.y);
-	}
+    }
 	
 	#endregion
 	#region Methods
