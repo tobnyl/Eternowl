@@ -6,7 +6,13 @@ public class Player : MonoBehaviour {
 
     #region Fields/Properties
 
+    [Header("Force")]
     public float Force;
+
+    [Header("Triggers")]
+    public Transform LeftEdge;
+    public Transform RightEdge;
+    public float Offset;
 
     private Rigidbody _rigidBody;
 
@@ -31,6 +37,22 @@ public class Player : MonoBehaviour {
     void FixedUpdate()
     {        
         _rigidBody.AddForce(new Vector3(Input.GetAxis("Horizontal"), 0, 0) * Force );
+    }
+
+    void OnTriggerEnter(Collider other)
+    {        
+        if (other.gameObject.tag == "RightEdge")
+        {
+            var boxCollider = other.gameObject.GetComponent<BoxCollider>();
+
+            transform.position = new Vector3(LeftEdge.position.x + boxCollider.size.x + Offset, transform.position.y, LeftEdge.position.z);
+        }
+        else if (other.gameObject.tag == "LeftEdge")
+        {
+            var boxCollider = other.gameObject.GetComponent<BoxCollider>();
+
+            transform.position = new Vector3(RightEdge.position.x - boxCollider.size.x - Offset, transform.position.y, RightEdge.position.z);
+        }
     }
 
     #endregion
