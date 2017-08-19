@@ -1857,23 +1857,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4751995701870654, guid: 664b41a43c19e734fa1cbec07235b271,
     type: 2}
   m_PrefabInternal: {fileID: 674190027}
---- !u!1 &695788576 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1214690697906698, guid: c702db5940c3cf143bbeaa99fcc67cd8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1100833092}
---- !u!65 &695788577
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 695788576}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.56, y: 2.56, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &702879165
 Prefab:
   m_ObjectHideFlags: 0
@@ -3052,12 +3035,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 212327216179892498, guid: c702db5940c3cf143bbeaa99fcc67cd8,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 7149b8127a2db2d41aba28dfb6213e77,
-        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c702db5940c3cf143bbeaa99fcc67cd8, type: 2}
   m_IsPrefabParent: 0
