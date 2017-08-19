@@ -13,6 +13,7 @@ public class CameraMovement : MonoBehaviour
     private float _height;
     private float _cameraBottom;
     private bool _isAtBottom;
+    private Vector3 _cameraStartPosition;
 
 	#endregion
 	#region Events
@@ -21,6 +22,7 @@ public class CameraMovement : MonoBehaviour
 	{
         _camera = GetComponent<Camera>();
 	    _height = 2f * _camera.orthographicSize;
+        _cameraStartPosition = transform.position;
     }
 	
 	void Start() 
@@ -59,7 +61,10 @@ public class CameraMovement : MonoBehaviour
 	#endregion
 	#region Methods
 	
-	
+	public void ResetPosition()
+    {
+        transform.position = _cameraStartPosition;
+    }
 	
 	#endregion
 }

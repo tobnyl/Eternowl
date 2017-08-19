@@ -2930,6 +2930,11 @@ Prefab:
       propertyPath: PortalTop
       value: 
       objectReference: {fileID: 1188138114}
+    - target: {fileID: 114935334693032570, guid: 50056daaa470094478972a266066b4d3,
+        type: 2}
+      propertyPath: Camera
+      value: 
+      objectReference: {fileID: 472051351}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 50056daaa470094478972a266066b4d3, type: 2}
   m_IsPrefabParent: 0

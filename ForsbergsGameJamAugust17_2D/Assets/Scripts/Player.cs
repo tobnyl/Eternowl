@@ -14,7 +14,7 @@ public class Player : MonoBehaviour {
     public Transform RightEdge;
     public float Offset;
     
-    public GameObject Level;
+    public CameraMovement Camera;
     public GameObject PortalTop;
 
     private Rigidbody _rigidBody;
@@ -60,6 +60,7 @@ public class Player : MonoBehaviour {
         {
             Debug.Log("Portal!");
             transform.position = PortalTop.transform.position;
+            Camera.ResetPosition();
         }
     }
 
