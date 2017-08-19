@@ -19,6 +19,7 @@ public class Player : MonoBehaviour {
     [Header("Death")]
     public float DeathSequenceTime;
     public float GoalSequenceTime;
+    public float FinishedSequenceTime;
 
     public CameraMovement Camera;
     public GameObject SpawnPosition;
@@ -102,7 +103,7 @@ public class Player : MonoBehaviour {
         //_spriteRenderer.enabled = false;
         _rigidBody.isKinematic = true;
 
-        StartCoroutine(DeathCoroutine());
+        StartCoroutine(NewSceneCoroutine(DeathSequenceTime, "GameOver"));
     }
 
     private void GoalSequence()
@@ -113,11 +114,13 @@ public class Player : MonoBehaviour {
 
         if (!GameManager.Instance.FinishedGame)
         {
-            StartCoroutine(GoalCoroutine());
+            StartCoroutine(NewSceneCoroutine(GoalSequenceTime, "Victory"));
+
         }
         else
         {
-            Debug.Log("Finished game!");
+            StartCoroutine(NewSceneCoroutine(FinishedSequenceTime, "FinishedGame"));
+
         }
     }
 
@@ -125,20 +128,18 @@ public class Player : MonoBehaviour {
 
     #region Coroutines
 
-    private IEnumerator GoalCoroutine()
+    //private IEnumerator GoalCoroutine()
+    //{
+    //    yield return new WaitForSeconds(GoalSequenceTime);
+
+    //    SceneManager.LoadScene("Victory");
+    //}
+
+    private IEnumerator NewSceneCoroutine(float time, string sceneToLoad)
     {
-        yield return new WaitForSeconds(GoalSequenceTime);
+        yield return new WaitForSeconds(time);
 
-        SceneManager.LoadScene("Victory");
-    }
-
-    private IEnumerator DeathCoroutine()
-    {
-        yield return new WaitForSeconds(DeathSequenceTime);
-
-        Debug.Log("Death...");
-
-        SceneManager.LoadScene("GameOver");
+        SceneManager.LoadScene(sceneToLoad);
     }
 
     #endregion
