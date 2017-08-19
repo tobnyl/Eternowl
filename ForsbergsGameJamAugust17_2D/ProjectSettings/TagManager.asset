@@ -8,6 +8,8 @@ TagManager:
   - LeftEdge
   - PortalBottom
   - PortalTop
+  - Goal
+  - Key
   layers:
   - Default
   - TransparentFX

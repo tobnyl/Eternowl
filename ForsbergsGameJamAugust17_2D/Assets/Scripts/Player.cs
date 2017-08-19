@@ -18,6 +18,7 @@ public class Player : MonoBehaviour {
     public GameObject SpawnPosition;
 
     private Rigidbody _rigidBody;
+    private bool _hasKey;
 
     #endregion
     #region Events
@@ -43,7 +44,7 @@ public class Player : MonoBehaviour {
     }
 
     void OnTriggerEnter(Collider other)
-    {        
+    {
         if (other.gameObject.tag == "RightEdge")
         {
             var boxCollider = other.gameObject.GetComponent<BoxCollider>();
@@ -58,9 +59,17 @@ public class Player : MonoBehaviour {
         }
         else if (other.gameObject.tag == "PortalBottom")
         {
-            Debug.Log("Portal!");
             transform.position = SpawnPosition.transform.position;
             Camera.ResetPosition();
+        }
+        else if (other.gameObject.tag == "Key")
+        {            
+            _hasKey = true;
+            Destroy(other.gameObject);
+        }
+        else if (other.gameObject.tag == "Goal" && _hasKey)
+        {
+            Debug.Log("Goal!");
         }
     }
 
