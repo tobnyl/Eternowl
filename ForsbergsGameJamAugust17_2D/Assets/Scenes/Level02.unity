@@ -610,6 +610,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d896afba53138ef4eb5e5b578f98fbe5, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &303301390 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114109093089927352, guid: d896afba53138ef4eb5e5b578f98fbe5,
+    type: 2}
+  m_PrefabInternal: {fileID: 303301389}
+  m_Script: {fileID: 11500000, guid: 2f8eb980d9181374abbe9f5b9eda9e06, type: 3}
 --- !u!1001 &303570002
 Prefab:
   m_ObjectHideFlags: 0
@@ -4781,6 +4787,11 @@ Prefab:
       propertyPath: SpawnPosition
       value: 
       objectReference: {fileID: 506064361}
+    - target: {fileID: 114935334693032570, guid: 50056daaa470094478972a266066b4d3,
+        type: 2}
+      propertyPath: GoalDoor
+      value: 
+      objectReference: {fileID: 303301390}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 50056daaa470094478972a266066b4d3, type: 2}
   m_IsPrefabParent: 0
