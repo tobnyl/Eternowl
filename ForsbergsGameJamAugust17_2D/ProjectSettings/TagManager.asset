@@ -11,6 +11,7 @@ TagManager:
   - Goal
   - Key
   - Spike
+  - Trampoline
   layers:
   - Default
   - TransparentFX

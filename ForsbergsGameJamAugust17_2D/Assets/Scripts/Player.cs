@@ -9,6 +9,7 @@ public class Player : MonoBehaviour {
 
     [Header("Force")]
     public float Force;
+    public float TrampolineForce;
 
     [Header("Triggers")]
     public Transform LeftEdge;
@@ -84,6 +85,11 @@ public class Player : MonoBehaviour {
         else if (other.gameObject.tag == "Spike")
         {
             DeathSequence();
+        }
+        else if (other.gameObject.tag == "Trampoline")
+        {
+            Debug.Log("Trampoline");
+            _rigidBody.AddForce(Vector3.up * TrampolineForce, ForceMode.Impulse);
         }
     }
 
