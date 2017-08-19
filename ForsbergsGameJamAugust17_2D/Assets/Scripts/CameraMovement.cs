@@ -6,6 +6,7 @@ public class CameraMovement : MonoBehaviour
     #region Fields/Properties
 
     public GameObject Player;
+    public GameObject Level;
 	
 	#endregion
 	#region Events
@@ -17,8 +18,17 @@ public class CameraMovement : MonoBehaviour
 	
 	void Start() 
 	{
-		
-	}
+        Bounds bounds = new Bounds();
+
+        var renderers = Level.GetComponentsInChildren<SpriteRenderer>();
+
+        foreach (var spriteRenderer in renderers)
+        {
+            bounds.Encapsulate(spriteRenderer.bounds);
+        }
+
+        Debug.LogFormat("Bounds: {0}", bounds.extents);
+    }
 
 	void Update() 
 	{
@@ -27,7 +37,7 @@ public class CameraMovement : MonoBehaviour
             var temp = transform.position;
             temp.y = Player.transform.position.y;
             transform.position = temp;
-        }
+        }        
 	}
 	
 	#endregion
