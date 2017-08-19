@@ -160,7 +160,7 @@ Prefab:
     - target: {fileID: 224172563247527470, guid: c380c6a5cc93a034dba1f78f824d44b6,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 70
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224547587796459094, guid: c380c6a5cc93a034dba1f78f824d44b6,
         type: 2}
@@ -170,7 +170,7 @@ Prefab:
     - target: {fileID: 224547587796459094, guid: c380c6a5cc93a034dba1f78f824d44b6,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c380c6a5cc93a034dba1f78f824d44b6, type: 2}
