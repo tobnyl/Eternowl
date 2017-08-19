@@ -9,14 +9,19 @@ public class CameraMovement : MonoBehaviour
     public GameObject Level;
 
     private Bounds _bounds;
+    private Camera _camera;
+    private float _height;
+    private float _cameraBottom;
+    private bool _isAtBottom;
 
 	#endregion
 	#region Events
 	
 	void Awake()
 	{
-		
-	}
+        _camera = GetComponent<Camera>();
+	    _height = 2f * _camera.orthographicSize;
+    }
 	
 	void Start() 
 	{
@@ -34,12 +39,19 @@ public class CameraMovement : MonoBehaviour
 
 	void Update() 
 	{
-		if (Player.transform.position.y < transform.position.y)
+        _cameraBottom = transform.position.y - (_height / 2f);
+        _isAtBottom = _cameraBottom <= _bounds.min.y;
+
+        //Debug.Log(isAtBottom);
+
+        if (!_isAtBottom && Player.transform.position.y < transform.position.y)
         {
             var temp = transform.position;
             temp.y = Player.transform.position.y;
             transform.position = temp;
-        }        
+        }
+
+        //Debug.LogFormat("Camera: {0} | Bottom: {1}", transform.position.y - (_height / 2f), _bounds.min.y);
 	}
 	
 	#endregion
