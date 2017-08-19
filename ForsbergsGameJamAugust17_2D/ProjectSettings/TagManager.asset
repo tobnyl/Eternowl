@@ -10,6 +10,7 @@ TagManager:
   - PortalTop
   - Goal
   - Key
+  - Spike
   layers:
   - Default
   - TransparentFX

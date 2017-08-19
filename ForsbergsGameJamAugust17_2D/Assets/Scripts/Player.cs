@@ -20,6 +20,8 @@ public class Player : MonoBehaviour {
     private Rigidbody _rigidBody;
     private bool _hasKey;
 
+    public bool IsDead { get; set; }
+
     #endregion
     #region Events
 
@@ -70,6 +72,11 @@ public class Player : MonoBehaviour {
         else if (other.gameObject.tag == "Goal" && _hasKey)
         {
             Debug.Log("Goal!");
+        }
+        else if (other.gameObject.tag == "Spike")
+        {
+            IsDead = true;
+            Destroy(gameObject);
         }
     }
 

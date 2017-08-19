@@ -5,7 +5,7 @@ public class CameraMovement : MonoBehaviour
 {
     #region Fields/Properties
 
-    public GameObject Player;
+    public Player Player;
     public GameObject Level;
 
     private Bounds _bounds;
@@ -41,21 +41,24 @@ public class CameraMovement : MonoBehaviour
 
 	void Update() 
 	{
-        _cameraBottom = transform.position.y - (_height / 2f);
-        _isAtBottom = _cameraBottom <= _bounds.min.y;
-        
-        if (!_isAtBottom && Player.transform.position.y < transform.position.y)
+        if (!Player.IsDead)
         {
-            var temp = transform.position;
-            temp.y = Player.transform.position.y;
-            transform.position = temp;
-        }
-        else if (_isAtBottom)
-        {
-            var temp = transform.position;
-            temp.y = _bounds.min.y + _height / 2f;
-            transform.position = temp;
-        }        
+            _cameraBottom = transform.position.y - (_height / 2f);
+            _isAtBottom = _cameraBottom <= _bounds.min.y;
+
+            if (!_isAtBottom && Player.transform.position.y < transform.position.y)
+            {
+                var temp = transform.position;
+                temp.y = Player.transform.position.y;
+                transform.position = temp;
+            }
+            else if (_isAtBottom)
+            {
+                var temp = transform.position;
+                temp.y = _bounds.min.y + _height / 2f;
+                transform.position = temp;
+            }
+        }       
     }
 	
 	#endregion
