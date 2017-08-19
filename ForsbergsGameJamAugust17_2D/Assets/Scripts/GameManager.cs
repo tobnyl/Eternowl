@@ -36,4 +36,10 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(Levels[CurrentLevelIndex]);
     }
+
+    public void LoadCurrentScene()
+    {
+        SceneManager.LoadScene(Levels[CurrentLevelIndex]);
+
+    }
 }

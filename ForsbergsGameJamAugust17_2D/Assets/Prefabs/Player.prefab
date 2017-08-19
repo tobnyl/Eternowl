@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114935334693032570}
   - component: {fileID: 65040607803334246}
   - component: {fileID: 114674402585869408}
+  - component: {fileID: 95969806028633988}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -52,7 +53,7 @@ Rigidbody:
   m_GameObject: {fileID: 1222396990797692}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 1
+  m_Drag: 0.5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -69,8 +70,25 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.56, y: 2.56, z: 0.2}
+  m_Size: {x: 2.5, y: 2.5, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &95969806028633988
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1222396990797692}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b84382385aabb6148bc2c6800561ce53, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114674402585869408
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -82,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40d9a5e1bf924d84ca7a688bb0803b32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeScale: 0.451
+  timeScale: 1
 --- !u!114 &114935334693032570
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -95,10 +113,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Force: 30
+  TrampolineForce: 30
   LeftEdge: {fileID: 0}
   RightEdge: {fileID: 0}
   Offset: 0.05
   DeathSequenceTime: 1
+  GoalSequenceTime: 0
   Camera: {fileID: 0}
   SpawnPosition: {fileID: 0}
 --- !u!212 &212363153126494674
@@ -133,7 +153,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 100
-  m_Sprite: {fileID: 21300000, guid: 7893b612042f67b4b8f9fa5c2d353061, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5222eea65126eed42837c9aa53f8c4b2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

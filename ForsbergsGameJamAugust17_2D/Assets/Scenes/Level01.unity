@@ -4475,28 +4475,6 @@ Transform:
   m_Father: {fileID: 1196500208}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1747433433 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1222396990797692, guid: 50056daaa470094478972a266066b4d3,
-    type: 2}
-  m_PrefabInternal: {fileID: 1881669962}
---- !u!95 &1747433434
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1747433433}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b84382385aabb6148bc2c6800561ce53, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1747433438 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114935334693032570, guid: 50056daaa470094478972a266066b4d3,
@@ -4654,52 +4632,16 @@ Prefab:
       propertyPath: RightEdge
       value: 
       objectReference: {fileID: 2061994649}
-    - target: {fileID: 114674402585869408, guid: 50056daaa470094478972a266066b4d3,
-        type: 2}
-      propertyPath: timeScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114935334693032570, guid: 50056daaa470094478972a266066b4d3,
-        type: 2}
-      propertyPath: PortalTop
-      value: 
-      objectReference: {fileID: 1188138114}
     - target: {fileID: 114935334693032570, guid: 50056daaa470094478972a266066b4d3,
         type: 2}
       propertyPath: Camera
       value: 
       objectReference: {fileID: 472051351}
-    - target: {fileID: 212363153126494674, guid: 50056daaa470094478972a266066b4d3,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 5222eea65126eed42837c9aa53f8c4b2,
-        type: 3}
-    - target: {fileID: 54079136925080948, guid: 50056daaa470094478972a266066b4d3,
-        type: 2}
-      propertyPath: m_Drag
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 114935334693032570, guid: 50056daaa470094478972a266066b4d3,
         type: 2}
       propertyPath: SpawnPosition
       value: 
       objectReference: {fileID: 506064361}
-    - target: {fileID: 114935334693032570, guid: 50056daaa470094478972a266066b4d3,
-        type: 2}
-      propertyPath: TrampolineForce
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 65040607803334246, guid: 50056daaa470094478972a266066b4d3,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 65040607803334246, guid: 50056daaa470094478972a266066b4d3,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 2.5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 50056daaa470094478972a266066b4d3, type: 2}
   m_IsPrefabParent: 0

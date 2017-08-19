@@ -26,7 +26,8 @@ public class GameOverUI : MonoBehaviour
         if (Input.GetButtonDown("Next"))
         {
             Debug.Log("Continue!!");
-            SceneManager.LoadScene(SceneNameToLoad);
+            GameManager.Instance.LoadCurrentScene();
+
         }
     }
 
