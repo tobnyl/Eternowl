@@ -17,7 +17,8 @@ public class Player : MonoBehaviour {
 
     [Header("Death")]
     public float DeathSequenceTime;
-    
+    public float GoalSequenceTime;
+
     public CameraMovement Camera;
     public GameObject SpawnPosition;
 
@@ -97,9 +98,23 @@ public class Player : MonoBehaviour {
         StartCoroutine(DeathCoroutine());
     }
 
+    private void GoalSequence()
+    {
+        _rigidBody.isKinematic = true;
+
+        GameManager.Instance.CurrentLevelIndex++;
+    }
+
     #endregion
 
     #region Coroutines
+
+    private IEnumerator GoalCoroutine()
+    {
+        yield return new WaitForSeconds(GoalSequenceTime);
+
+        SceneManager.LoadScene("Victory");
+    }
 
     private IEnumerator DeathCoroutine()
     {

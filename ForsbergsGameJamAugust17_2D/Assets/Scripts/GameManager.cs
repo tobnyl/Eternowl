@@ -5,10 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public string[] Levels;    
+
+    public int CurrentLevelIndex { get; set; }
+
     private static GameManager _instance;
-
-    public static int Keys { get; set; }
-
     public static GameManager Instance
     {
         get { return _instance; }
@@ -20,9 +21,9 @@ public class GameManager : MonoBehaviour
             _instance = this;
         }
 
-        Keys = GameObject.FindGameObjectsWithTag("Key").Length;
+        //Keys = GameObject.FindGameObjectsWithTag("Key").Length;
 
-        
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
