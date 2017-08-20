@@ -88,6 +88,8 @@ public class Player : MonoBehaviour {
         }
         else if (other.gameObject.tag == "Spike")
         {
+            AudioPlayer.Instance.PlaySoundEffect2D(GameManager.Instance.Spike);
+
             DeathSequence();
         }
         else if (other.gameObject.tag == "Trampoline")

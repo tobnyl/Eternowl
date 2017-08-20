@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public Track OwlDeath;
 
     [Header("Sound Effects")]
+    public SoundEffect Spike;
     
 
     [Header("Debug")]
