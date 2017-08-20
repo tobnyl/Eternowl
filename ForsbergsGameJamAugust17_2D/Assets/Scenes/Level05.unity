@@ -5876,7 +5876,7 @@ Prefab:
         type: 2}
       propertyPath: SpawnPosition
       value: 
-      objectReference: {fileID: 1331883395}
+      objectReference: {fileID: 1921385212}
     - target: {fileID: 114935334693032570, guid: 50056daaa470094478972a266066b4d3,
         type: 2}
       propertyPath: GoalDoor
