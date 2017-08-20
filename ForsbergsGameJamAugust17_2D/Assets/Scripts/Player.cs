@@ -99,6 +99,9 @@ public class Player : MonoBehaviour {
         }
         else if (other.gameObject.tag == "Trampoline")
         {
+            AudioPlayer.Instance.PlaySoundEffect2D(GameManager.Instance.TrampolineLandOn);
+            StartCoroutine(TrampolineJumpOffCoroutine());
+
             var trampoline = other.gameObject.GetComponentInParent<Trampoline>();
             trampoline.PlayAnimation();
 
@@ -143,12 +146,13 @@ public class Player : MonoBehaviour {
 
     #region Coroutines
 
-    //private IEnumerator GoalCoroutine()
-    //{
-    //    yield return new WaitForSeconds(GoalSequenceTime);
+    private IEnumerator TrampolineJumpOffCoroutine()
+    {
+        yield return new WaitForSeconds(0.02f);
 
-    //    SceneManager.LoadScene("Victory");
-    //}
+            AudioPlayer.Instance.PlaySoundEffect2D(GameManager.Instance.TrampolineJumpOff);
+
+    }
 
     private IEnumerator NewSceneCoroutine(float time, string sceneToLoad)
     {

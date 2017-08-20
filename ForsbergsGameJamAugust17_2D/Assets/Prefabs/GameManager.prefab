@@ -131,4 +131,36 @@ MonoBehaviour:
     Loops: 1
     SameVolumeForEachLoop: 1
     SamePitchForEachLoop: 1
+  TrampolineLandOn:
+    Clip: {fileID: 8300000, guid: a5ec52bac751f7343bee4aa93a365cd0, type: 3}
+    Group: {fileID: 243869528857120834, guid: 7c95cf9993049c2489d129dafea6d78c, type: 2}
+    Reverse: 0
+    Mute: 0
+    Volume: 1
+    Pitch: 1
+    RandomVolume: 0
+    MinVolume: 1
+    MaxVolume: 1
+    RandomPitch: 0
+    MinPitch: 1
+    MaxPitch: 1
+    Loops: 1
+    SameVolumeForEachLoop: 1
+    SamePitchForEachLoop: 1
+  TrampolineJumpOff:
+    Clip: {fileID: 8300000, guid: 0d2e43f031def3142acfa4439a6e45dc, type: 3}
+    Group: {fileID: 243384247454802934, guid: 7c95cf9993049c2489d129dafea6d78c, type: 2}
+    Reverse: 0
+    Mute: 0
+    Volume: 1
+    Pitch: 1
+    RandomVolume: 0
+    MinVolume: 1
+    MaxVolume: 1
+    RandomPitch: 0
+    MinPitch: 1
+    MaxPitch: 1
+    Loops: 1
+    SameVolumeForEachLoop: 1
+    SamePitchForEachLoop: 1
   UseThisLevelIndexOnly: 1

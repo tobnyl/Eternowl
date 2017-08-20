@@ -21,6 +21,8 @@ AudioMixerController:
     - e29fb8c8f1bb92b43b1dbf1de05e1172
     - 619d0ba9799d09d478528a22e853aa9b
     - a11c5b3746c2c4143ae808671af85424
+    - cb4b29e5a3abac84a84e48fded3abf4e
+    - eb1bc483b04c9df4b9d84e940819039c
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500003}
@@ -35,6 +37,8 @@ AudioMixerGroupController:
   m_Children:
   - {fileID: 243519530547703006}
   - {fileID: 243047356113537282}
+  - {fileID: 243869528857120834}
+  - {fileID: 243384247454802934}
   m_Volume: fcd4db79608e4094c8d787e918093024
   m_Pitch: 1452a8caf49211442a1c32707562a206
   m_Effects:
@@ -89,6 +93,23 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!243 &243384247454802934
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: TrampolineJumpOff
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: eb1bc483b04c9df4b9d84e940819039c
+  m_Children: []
+  m_Volume: 73950af481941ba4398650b701f8e043
+  m_Pitch: 2c52980e3548b2848b7a7ff93badd7cf
+  m_Effects:
+  - {fileID: 244166970494589472}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!243 &243519530547703006
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -106,6 +127,23 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!243 &243869528857120834
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: TrampolineLandOn
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: cb4b29e5a3abac84a84e48fded3abf4e
+  m_Children: []
+  m_Volume: 5bb0852a5158fc24abe9fb52fc8fb9f9
+  m_Pitch: 811727bbd207b714493ceccacf816cbd
+  m_Effects:
+  - {fileID: 244306667461440434}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!244 &244126549823699636
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -115,6 +153,32 @@ AudioMixerEffectController:
   m_EffectID: 26f55105eeb3b1d4892dc5c69f80e7ef
   m_EffectName: Attenuation
   m_MixLevel: be327fa5d202ace49a9b2c5b280cac05
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244166970494589472
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 3024cf20df30f284085c2f56956d8e2f
+  m_EffectName: Attenuation
+  m_MixLevel: a5ae98d821ff041469161b228ca499b5
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244306667461440434
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 4324daa33c0b1564e97d3edc9679dcd8
+  m_EffectName: Attenuation
+  m_MixLevel: 869c2e52055371e4cbc0726823eeeb64
   m_Parameters: []
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
