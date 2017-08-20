@@ -115,4 +115,20 @@ MonoBehaviour:
     Loops: 1
     SameVolumeForEachLoop: 1
     SamePitchForEachLoop: 1
+  OpenDoor:
+    Clip: {fileID: 8300000, guid: 12a3741f11e782148838953c2993f124, type: 3}
+    Group: {fileID: 243047356113537282, guid: 7c95cf9993049c2489d129dafea6d78c, type: 2}
+    Reverse: 0
+    Mute: 0
+    Volume: 1
+    Pitch: 1
+    RandomVolume: 0
+    MinVolume: 1
+    MaxVolume: 1
+    RandomPitch: 0
+    MinPitch: 1
+    MaxPitch: 1
+    Loops: 1
+    SameVolumeForEachLoop: 1
+    SamePitchForEachLoop: 1
   UseThisLevelIndexOnly: 1

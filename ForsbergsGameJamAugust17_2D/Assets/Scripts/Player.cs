@@ -20,7 +20,7 @@ public class Player : MonoBehaviour {
     [Header("Death")]
     public float DeathSequenceTime;
     public float GoalSequenceTime;
-    public float FinishedSequenceTime;
+    //public float FinishedSequenceTime;
 
     public Goal GoalDoor;
     public CameraMovement Camera;
@@ -78,12 +78,17 @@ public class Player : MonoBehaviour {
         else if (other.gameObject.tag == "Key")
         {            
             _hasKey = true;
-            GoalDoor.ChangeToOpenDoorSprite();
+            
             Destroy(other.gameObject);
         }
         else if (other.gameObject.tag == "Goal" && _hasKey)
         {
             Debug.Log("Goal!");
+
+            GoalDoor.ChangeToOpenDoorSprite();
+            AudioPlayer.Instance.PlaySoundEffect2D(GameManager.Instance.OpenDoor);
+
+
             GoalSequence();
         }
         else if (other.gameObject.tag == "Spike")
@@ -129,7 +134,7 @@ public class Player : MonoBehaviour {
         }
         else
         {
-            StartCoroutine(NewSceneCoroutine(FinishedSequenceTime, "FinishedGame"));
+            StartCoroutine(NewSceneCoroutine(GoalSequenceTime, "FinishedGame"));
 
         }
     }

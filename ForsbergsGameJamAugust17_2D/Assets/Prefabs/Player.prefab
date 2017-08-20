@@ -118,7 +118,8 @@ MonoBehaviour:
   RightEdge: {fileID: 0}
   Offset: 0.05
   DeathSequenceTime: 1
-  GoalSequenceTime: 0
+  GoalSequenceTime: 1
+  GoalDoor: {fileID: 0}
   Camera: {fileID: 0}
   SpawnPosition: {fileID: 0}
 --- !u!212 &212363153126494674

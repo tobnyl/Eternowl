@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Sound Effects")]
     public SoundEffect Spike;
+    public SoundEffect OpenDoor;
     
 
     [Header("Debug")]
