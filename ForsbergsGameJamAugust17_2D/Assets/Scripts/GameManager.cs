@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public Track LevelComplete;
     public Track LevelFailed;
     public Track OwlDeath;
+    public Track Title;
 
     [Header("Sound Effects")]
     public SoundEffect Spike;

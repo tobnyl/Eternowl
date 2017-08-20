@@ -100,6 +100,16 @@ MonoBehaviour:
     Intro: 0
     IntroEndTime: 0
     Loop: 0
+  Title:
+    Clip: {fileID: 8300000, guid: e3a7eb2094f422c40ad98a4f40258c10, type: 3}
+    Group: {fileID: 243500088342385374, guid: 3f3a2f40065af744db9e8072c30c114c, type: 2}
+    Reverse: 0
+    Mute: 0
+    Volume: 1
+    Pitch: 1
+    Intro: 0
+    IntroEndTime: 0
+    Loop: 0
   Spike:
     Clip: {fileID: 8300000, guid: 7b90511d7ad91dc4a8e7bb4bb901fa97, type: 3}
     Group: {fileID: 243519530547703006, guid: 7c95cf9993049c2489d129dafea6d78c, type: 2}
