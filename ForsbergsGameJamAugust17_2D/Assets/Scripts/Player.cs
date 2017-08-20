@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Supersonic;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -107,6 +108,8 @@ public class Player : MonoBehaviour {
         IsDead = true;
         //_spriteRenderer.enabled = false;
         _rigidBody.isKinematic = true;
+
+        AudioPlayer.Instance.PlayTrack(GameManager.Instance.OwlDeath);
 
         StartCoroutine(NewSceneCoroutine(DeathSequenceTime, "GameOver"));
     }

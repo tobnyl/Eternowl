@@ -22,6 +22,7 @@ AudioMixerController:
     - 31d7896d18e4ec1488037b7c6b0f9793
     - f5588c56592410648b48c57a0007127b
     - a8f4b64b9654fb049986f1415dbef32d
+    - c5b5658013cecb44cbb11ab7a4c69376
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -37,6 +38,7 @@ AudioMixerGroupController:
   - {fileID: 243322764890728772}
   - {fileID: 243616016750184936}
   - {fileID: 243812515485870084}
+  - {fileID: 243877756548913956}
   m_Volume: 49f88af02165d31429bce6adfc38fc73
   m_Pitch: 4a75a2132a5cacc41a5fd92f55412f0d
   m_Effects:
@@ -120,6 +122,36 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!243 &243877756548913956
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: OwlDeath
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: c5b5658013cecb44cbb11ab7a4c69376
+  m_Children: []
+  m_Volume: 586db87b5566e324b9fba40bbf4eff5a
+  m_Pitch: e794ff8128f234f4682265d3fa09d004
+  m_Effects:
+  - {fileID: 244008826804708454}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &244008826804708454
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: cccf0ff4e8d69ab4b81e3e7f3029e8a3
+  m_EffectName: Attenuation
+  m_MixLevel: 9e86b596167a92d41993575dfdd970c1
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &244198962041997090
 AudioMixerEffectController:
   m_ObjectHideFlags: 3

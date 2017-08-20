@@ -79,4 +79,24 @@ MonoBehaviour:
     Intro: 0
     IntroEndTime: 0
     Loop: 0
+  LevelFailed:
+    Clip: {fileID: 8300000, guid: 104f57a9a12a38146a569d79a97f9c86, type: 3}
+    Group: {fileID: 243812515485870084, guid: 3f3a2f40065af744db9e8072c30c114c, type: 2}
+    Reverse: 0
+    Mute: 0
+    Volume: 1
+    Pitch: 1
+    Intro: 0
+    IntroEndTime: 0
+    Loop: 0
+  OwlDeath:
+    Clip: {fileID: 8300000, guid: 2084cc11850d30b4ea936adb0ec6ef1e, type: 3}
+    Group: {fileID: 243877756548913956, guid: 3f3a2f40065af744db9e8072c30c114c, type: 2}
+    Reverse: 0
+    Mute: 0
+    Volume: 1
+    Pitch: 1
+    Intro: 0
+    IntroEndTime: 0
+    Loop: 0
   UseThisLevelIndexOnly: 0

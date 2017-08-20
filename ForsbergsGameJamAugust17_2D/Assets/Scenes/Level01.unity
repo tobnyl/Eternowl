@@ -2736,17 +2736,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 114237919691016154, guid: 8619382639f7a8849ae86eb4fbedafd4,
-        type: 2}
-      propertyPath: LevelFailed.Clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 104f57a9a12a38146a569d79a97f9c86, type: 3}
-    - target: {fileID: 114237919691016154, guid: 8619382639f7a8849ae86eb4fbedafd4,
-        type: 2}
-      propertyPath: LevelFailed.Group
-      value: 
-      objectReference: {fileID: 243812515485870084, guid: 3f3a2f40065af744db9e8072c30c114c,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8619382639f7a8849ae86eb4fbedafd4, type: 2}
   m_IsPrefabParent: 0
