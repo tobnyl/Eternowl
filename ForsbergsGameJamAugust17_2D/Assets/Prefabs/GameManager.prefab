@@ -52,6 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Levels:
+  - Level00
   - Level01
   - Level02
   - Level03
@@ -164,7 +165,7 @@ MonoBehaviour:
     SameVolumeForEachLoop: 1
     SamePitchForEachLoop: 1
   PortalEnter:
-    Clip: {fileID: 8300000, guid: 9b45f3f90b8e4ac4b9c4769f1db9af97, type: 3}
+    Clip: {fileID: 8300000, guid: 0c5da2cec2a925d4b81d133c8b291f3d, type: 3}
     Group: {fileID: 243808953270452782, guid: 7c95cf9993049c2489d129dafea6d78c, type: 2}
     Reverse: 0
     Mute: 0
@@ -182,6 +183,22 @@ MonoBehaviour:
   PortalExit:
     Clip: {fileID: 8300000, guid: a2c3de39f03af8b4aaa7fc3a5e787718, type: 3}
     Group: {fileID: 243265387590710892, guid: 7c95cf9993049c2489d129dafea6d78c, type: 2}
+    Reverse: 0
+    Mute: 0
+    Volume: 1
+    Pitch: 1
+    RandomVolume: 0
+    MinVolume: 1
+    MaxVolume: 1
+    RandomPitch: 0
+    MinPitch: 1
+    MaxPitch: 1
+    Loops: 1
+    SameVolumeForEachLoop: 1
+    SamePitchForEachLoop: 1
+  Key:
+    Clip: {fileID: 8300000, guid: 48a847b46f22f63479509545419d7139, type: 3}
+    Group: {fileID: 243010234828757916, guid: 7c95cf9993049c2489d129dafea6d78c, type: 2}
     Reverse: 0
     Mute: 0
     Volume: 1
