@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using Supersonic;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
@@ -18,7 +19,7 @@ public class VictoryUI : MonoBehaviour
 
     void Start()
     {
-
+        AudioPlayer.Instance.PlayTrack(GameManager.Instance.LevelComplete);
     }
 
     void Update()

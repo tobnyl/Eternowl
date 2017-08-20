@@ -10,6 +10,10 @@ public class GameManager : MonoBehaviour
 
     [Header("Music")]
     public Track LevelBgm;
+    public Track LevelComplete;
+
+    [Header("Sound Effects")]
+    
 
     [Header("Debug")]
     public int UseThisLevelIndexOnly;
