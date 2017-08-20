@@ -2736,6 +2736,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114237919691016154, guid: 8619382639f7a8849ae86eb4fbedafd4,
+        type: 2}
+      propertyPath: PortalEnter.Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0c5da2cec2a925d4b81d133c8b291f3d, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8619382639f7a8849ae86eb4fbedafd4, type: 2}
   m_IsPrefabParent: 0
