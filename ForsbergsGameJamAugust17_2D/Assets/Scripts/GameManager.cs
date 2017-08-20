@@ -13,10 +13,16 @@ public class GameManager : MonoBehaviour
     public Track LevelComplete;
     public Track LevelFailed;
     public Track OwlDeath;
+    public Track Title;
 
     [Header("Sound Effects")]
     public SoundEffect Spike;
-    
+    public SoundEffect OpenDoor;
+    public SoundEffect TrampolineLandOn;
+    public SoundEffect TrampolineJumpOff;
+    public SoundEffect PortalEnter;
+    public SoundEffect PortalExit;
+    public SoundEffect Key;
 
     [Header("Debug")]
     public int UseThisLevelIndexOnly;

@@ -20,7 +20,7 @@ public class Player : MonoBehaviour {
     [Header("Death")]
     public float DeathSequenceTime;
     public float GoalSequenceTime;
-    public float FinishedSequenceTime;
+    //public float FinishedSequenceTime;
 
     public Goal GoalDoor;
     public CameraMovement Camera;
@@ -72,18 +72,28 @@ public class Player : MonoBehaviour {
         }
         else if (other.gameObject.tag == "PortalBottom")
         {
+            AudioPlayer.Instance.PlaySoundEffect2D(GameManager.Instance.PortalEnter);
+
             transform.position = SpawnPosition.transform.position;
             Camera.ResetPosition();
         }
         else if (other.gameObject.tag == "Key")
         {            
             _hasKey = true;
-            GoalDoor.ChangeToOpenDoorSprite();
+
+            AudioPlayer.Instance.PlaySoundEffect2D(GameManager.Instance.Key);
+
+
             Destroy(other.gameObject);
         }
         else if (other.gameObject.tag == "Goal" && _hasKey)
         {
             Debug.Log("Goal!");
+
+            GoalDoor.ChangeToOpenDoorSprite();
+            AudioPlayer.Instance.PlaySoundEffect2D(GameManager.Instance.OpenDoor);
+
+
             GoalSequence();
         }
         else if (other.gameObject.tag == "Spike")
@@ -94,6 +104,9 @@ public class Player : MonoBehaviour {
         }
         else if (other.gameObject.tag == "Trampoline")
         {
+            AudioPlayer.Instance.PlaySoundEffect2D(GameManager.Instance.TrampolineLandOn);
+            StartCoroutine(TrampolineJumpOffCoroutine());
+
             var trampoline = other.gameObject.GetComponentInParent<Trampoline>();
             trampoline.PlayAnimation();
 
@@ -129,7 +142,7 @@ public class Player : MonoBehaviour {
         }
         else
         {
-            StartCoroutine(NewSceneCoroutine(FinishedSequenceTime, "FinishedGame"));
+            StartCoroutine(NewSceneCoroutine(GoalSequenceTime, "FinishedGame"));
 
         }
     }
@@ -138,12 +151,13 @@ public class Player : MonoBehaviour {
 
     #region Coroutines
 
-    //private IEnumerator GoalCoroutine()
-    //{
-    //    yield return new WaitForSeconds(GoalSequenceTime);
+    private IEnumerator TrampolineJumpOffCoroutine()
+    {
+        yield return new WaitForSeconds(0.02f);
 
-    //    SceneManager.LoadScene("Victory");
-    //}
+            AudioPlayer.Instance.PlaySoundEffect2D(GameManager.Instance.TrampolineJumpOff);
+
+    }
 
     private IEnumerator NewSceneCoroutine(float time, string sceneToLoad)
     {
