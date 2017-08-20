@@ -163,4 +163,36 @@ MonoBehaviour:
     Loops: 1
     SameVolumeForEachLoop: 1
     SamePitchForEachLoop: 1
+  PortalEnter:
+    Clip: {fileID: 8300000, guid: 9b45f3f90b8e4ac4b9c4769f1db9af97, type: 3}
+    Group: {fileID: 243808953270452782, guid: 7c95cf9993049c2489d129dafea6d78c, type: 2}
+    Reverse: 0
+    Mute: 0
+    Volume: 1
+    Pitch: 1
+    RandomVolume: 0
+    MinVolume: 1
+    MaxVolume: 1
+    RandomPitch: 0
+    MinPitch: 1
+    MaxPitch: 1
+    Loops: 1
+    SameVolumeForEachLoop: 1
+    SamePitchForEachLoop: 1
+  PortalExit:
+    Clip: {fileID: 8300000, guid: a2c3de39f03af8b4aaa7fc3a5e787718, type: 3}
+    Group: {fileID: 243265387590710892, guid: 7c95cf9993049c2489d129dafea6d78c, type: 2}
+    Reverse: 0
+    Mute: 0
+    Volume: 1
+    Pitch: 1
+    RandomVolume: 0
+    MinVolume: 1
+    MaxVolume: 1
+    RandomPitch: 0
+    MinPitch: 1
+    MaxPitch: 1
+    Loops: 1
+    SameVolumeForEachLoop: 1
+    SamePitchForEachLoop: 1
   UseThisLevelIndexOnly: 0

@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     public SoundEffect OpenDoor;
     public SoundEffect TrampolineLandOn;
     public SoundEffect TrampolineJumpOff;
+    public SoundEffect PortalEnter;
+    public SoundEffect PortalExit;
 
     [Header("Debug")]
     public int UseThisLevelIndexOnly;

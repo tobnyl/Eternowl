@@ -72,6 +72,8 @@ public class Player : MonoBehaviour {
         }
         else if (other.gameObject.tag == "PortalBottom")
         {
+            AudioPlayer.Instance.PlaySoundEffect2D(GameManager.Instance.PortalEnter);
+
             transform.position = SpawnPosition.transform.position;
             Camera.ResetPosition();
         }
