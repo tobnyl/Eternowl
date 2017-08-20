@@ -5,7 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public string[] Levels;    
+    public string[] Levels;
+
+    [Header("Debug")]
+    public int UseThisLevelIndexOnly;
 
     public int CurrentLevelIndex { get; set; }
     public bool FinishedGame { get { return CurrentLevelIndex >= Levels.Length;  } }
@@ -43,7 +46,14 @@ public class GameManager : MonoBehaviour
 
     public void LoadCurrentScene()
     {
-        SceneManager.LoadScene(Levels[CurrentLevelIndex]);
+        if (UseThisLevelIndexOnly == 0)
+        { 
+            SceneManager.LoadScene(Levels[CurrentLevelIndex]);
+        }
+        else
+        {
+            SceneManager.LoadScene(Levels[UseThisLevelIndexOnly]);
+        }
 
     }
 }
