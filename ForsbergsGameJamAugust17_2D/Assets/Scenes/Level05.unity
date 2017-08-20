@@ -6073,6 +6073,11 @@ Prefab:
       objectReference: {fileID: 2061994649}
     - target: {fileID: 114935334693032570, guid: 50056daaa470094478972a266066b4d3,
         type: 2}
+      propertyPath: GoalDoor
+      value: 
+      objectReference: {fileID: 493141195}
+    - target: {fileID: 114935334693032570, guid: 50056daaa470094478972a266066b4d3,
+        type: 2}
       propertyPath: Camera
       value: 
       objectReference: {fileID: 472051351}
@@ -6081,11 +6086,6 @@ Prefab:
       propertyPath: SpawnPosition
       value: 
       objectReference: {fileID: 1921385212}
-    - target: {fileID: 114935334693032570, guid: 50056daaa470094478972a266066b4d3,
-        type: 2}
-      propertyPath: GoalDoor
-      value: 
-      objectReference: {fileID: 493141195}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 50056daaa470094478972a266066b4d3, type: 2}
   m_IsPrefabParent: 0

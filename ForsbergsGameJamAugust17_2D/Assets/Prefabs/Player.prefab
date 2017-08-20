@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Force: 30
-  TrampolineForce: 30
+  TrampolineForce: 25
   LeftEdge: {fileID: 0}
   RightEdge: {fileID: 0}
   Offset: 0.1
