@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using Supersonic;
 
 public class GameOverUI : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class GameOverUI : MonoBehaviour
 
     void Start()
     {
-
+        AudioPlayer.Instance.PlayTrack(GameManager.Instance.LevelFailed);
     }
 
     void Update()

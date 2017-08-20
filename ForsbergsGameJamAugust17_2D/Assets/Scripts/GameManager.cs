@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     [Header("Music")]
     public Track LevelBgm;
     public Track LevelComplete;
+    public Track LevelFailed;
 
     [Header("Sound Effects")]
     
