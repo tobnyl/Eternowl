@@ -30,6 +30,9 @@ public class Player : MonoBehaviour {
     private bool _hasKey;
     private SpriteRenderer _spriteRenderer;
 
+    private Animator _animator;
+    private int _isDeadHash;
+
     public bool IsDead { get; set; }
 
     #endregion
@@ -39,6 +42,10 @@ public class Player : MonoBehaviour {
     {
         _rigidBody = GetComponent<Rigidbody>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
+
+        _animator = GetComponent<Animator>();
+
+        _isDeadHash = Animator.StringToHash("IsDead");
     }
 
     void Start()
@@ -120,12 +127,14 @@ public class Player : MonoBehaviour {
 
     private void DeathSequence()
     {
-        IsDead = true;
-        //_spriteRenderer.enabled = false;
+        IsDead = true;        
         _rigidBody.isKinematic = true;
+
+        _animator.SetBool(_isDeadHash, true);
 
         AudioPlayer.Instance.PlayTrack(GameManager.Instance.OwlDeath);
 
+        StartCoroutine(HideCharacter());
         StartCoroutine(NewSceneCoroutine(DeathSequenceTime, "GameOver"));
     }
 
@@ -150,6 +159,15 @@ public class Player : MonoBehaviour {
     #endregion
 
     #region Coroutines
+
+    private IEnumerator HideCharacter()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        _spriteRenderer.enabled = false;
+
+        
+    }
 
     private IEnumerator TrampolineJumpOffCoroutine()
     {
