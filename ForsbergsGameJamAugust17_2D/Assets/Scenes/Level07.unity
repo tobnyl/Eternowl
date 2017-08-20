@@ -1276,6 +1276,11 @@ Prefab:
       propertyPath: m_Name
       value: platform EE (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 212052714876400210, guid: cec0a4d1827ee5146a03854251f12fdb,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cec0a4d1827ee5146a03854251f12fdb, type: 2}
   m_IsPrefabParent: 0
@@ -7922,6 +7927,11 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: c0e1a0456c1127d4eb9b482f2296d18a,
         type: 3}
+    - target: {fileID: 212052714876400210, guid: cec0a4d1827ee5146a03854251f12fdb,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cec0a4d1827ee5146a03854251f12fdb, type: 2}
   m_IsPrefabParent: 0
