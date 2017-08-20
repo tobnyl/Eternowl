@@ -91,6 +91,9 @@ public class Player : MonoBehaviour {
         }
         else if (other.gameObject.tag == "Trampoline")
         {
+            var trampoline = other.gameObject.GetComponentInParent<Trampoline>();
+            trampoline.PlayAnimation();
+
             Debug.Log("Trampoline");
             _rigidBody.AddForce(Vector3.up * TrampolineForce, ForceMode.Impulse);
         }
