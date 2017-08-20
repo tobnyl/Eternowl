@@ -14,7 +14,7 @@ public class TitleUI : MonoBehaviour
 
     void Awake()
     {
-
+        Screen.fullScreen = true;
     }
 
     void Start()
