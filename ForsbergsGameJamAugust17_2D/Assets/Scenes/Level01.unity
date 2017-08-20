@@ -2741,6 +2741,17 @@ Prefab:
       propertyPath: PortalEnter.Clip
       value: 
       objectReference: {fileID: 8300000, guid: 0c5da2cec2a925d4b81d133c8b291f3d, type: 3}
+    - target: {fileID: 114237919691016154, guid: 8619382639f7a8849ae86eb4fbedafd4,
+        type: 2}
+      propertyPath: Key.Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 48a847b46f22f63479509545419d7139, type: 3}
+    - target: {fileID: 114237919691016154, guid: 8619382639f7a8849ae86eb4fbedafd4,
+        type: 2}
+      propertyPath: Key.Group
+      value: 
+      objectReference: {fileID: 243010234828757916, guid: 7c95cf9993049c2489d129dafea6d78c,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8619382639f7a8849ae86eb4fbedafd4, type: 2}
   m_IsPrefabParent: 0

@@ -80,7 +80,10 @@ public class Player : MonoBehaviour {
         else if (other.gameObject.tag == "Key")
         {            
             _hasKey = true;
-            
+
+            AudioPlayer.Instance.PlaySoundEffect2D(GameManager.Instance.Key);
+
+
             Destroy(other.gameObject);
         }
         else if (other.gameObject.tag == "Goal" && _hasKey)
