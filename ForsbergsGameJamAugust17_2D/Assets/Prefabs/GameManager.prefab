@@ -163,4 +163,4 @@ MonoBehaviour:
     Loops: 1
     SameVolumeForEachLoop: 1
     SamePitchForEachLoop: 1
-  UseThisLevelIndexOnly: 1
+  UseThisLevelIndexOnly: 0
