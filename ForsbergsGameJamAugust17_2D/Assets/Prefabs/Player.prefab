@@ -116,7 +116,7 @@ MonoBehaviour:
   TrampolineForce: 30
   LeftEdge: {fileID: 0}
   RightEdge: {fileID: 0}
-  Offset: 0.05
+  Offset: 0.1
   DeathSequenceTime: 1
   GoalSequenceTime: 1
   GoalDoor: {fileID: 0}
@@ -154,7 +154,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 100
-  m_Sprite: {fileID: 21300000, guid: 5222eea65126eed42837c9aa53f8c4b2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 96f3b4049360e6542807fbe6d416ed52, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
