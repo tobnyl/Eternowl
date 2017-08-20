@@ -24,7 +24,7 @@ public class GameOverUI : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Next"))
+        if (Input.anyKeyDown)
         {
             Debug.Log("Continue!!");
             GameManager.Instance.LoadCurrentScene();
