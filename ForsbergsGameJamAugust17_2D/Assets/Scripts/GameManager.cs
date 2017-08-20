@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Supersonic;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,6 +7,9 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public string[] Levels;
+
+    [Header("Music")]
+    public Track LevelBgm;
 
     [Header("Debug")]
     public int UseThisLevelIndexOnly;
@@ -24,6 +28,8 @@ public class GameManager : MonoBehaviour
         {
             _instance = this;
         }
+
+        AudioPlayer.Instance.PlayTrack(LevelBgm);
 
         //Keys = GameObject.FindGameObjectsWithTag("Key").Length;
 
