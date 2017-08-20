@@ -4589,6 +4589,12 @@ Prefab:
       propertyPath: SpawnPosition
       value: 
       objectReference: {fileID: 506064361}
+    - target: {fileID: 212363153126494674, guid: 50056daaa470094478972a266066b4d3,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 96f3b4049360e6542807fbe6d416ed52,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 50056daaa470094478972a266066b4d3, type: 2}
   m_IsPrefabParent: 0
